@@ -1,1 +1,2 @@
-#Learning GitHub Actions
+# Learning GitHub Actions
+[![Python Action](https://github.com/bbynoCode/385_GH_Actions/actions/workflows/python-action.yml/badge.svg)](https://github.com/bbynoCode/385_GH_Actions/actions/workflows/python-action.yml)
