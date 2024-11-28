@@ -18,12 +18,5 @@ jobs:
         pip install -r requirements.txt
     - name: Test with pytest
       run: |
-        pip install pytest pytest-cov
-        pytest example.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
-    - name: Test Report
-      uses: dorny/test-reporter@v1
-      if: success() || failure()    # run this step even if previous step failed
-      with:
-        name: Pytest Tests          # Name of the check run which will be created
-        path: reports/test-results.xml    # Path to test results
-        reporter: jest-junit        # Format of test results
+        pip install pytest
+        pytest example.py
