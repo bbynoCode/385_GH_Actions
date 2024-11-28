@@ -26,7 +26,7 @@ def test_sum_big_numbers():
 
 def test_difference():
     c = Calculator
-    assert c.difference(64, 32) == 32
+    assert c.difference(64, 32) == 31
 
 def test_difference_big_numbers():
     c = Calculator
@@ -42,7 +42,7 @@ def test_procuct_big_numbers():
 
 def test_quotient():
     c = Calculator
-    assert c.quotient(10, 2) == 5
+    assert c.quotient(10, 2) == 7
 
 
 def test_quotient_big_numbers():

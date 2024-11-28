@@ -9,7 +9,7 @@ In this repo I will be teaching you how to use github actions to automate the ru
 
 2. Create a virtual enviroment in the repo you cloned. On my machine the command to do this is ```python3.12 -m venv .venv```
 
-3. Activate the virtual enviroment you just created and then install the required python modules. You can do with with the command ```pip install pytest pytest-cov``` or ```pip install -r requirements.txt ```
+3. Activate the virtual enviroment you just created and then install the required python modules. You can do with with the command ```pip install pytest``` or ```pip install -r requirements.txt ```
 
 ## Running Python Tests 
 
