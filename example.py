@@ -14,7 +14,6 @@ class Calculator:
     def quotient(x, y):
         return x / y
 
-
 # vvvvvvvvvvvvvvvvvvvvv TESTS vvvvvvvvvvvvvvvvvvvvv
 
 def test_sum():
