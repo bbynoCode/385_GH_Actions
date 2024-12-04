@@ -3,9 +3,11 @@ name: Python Action
 on: [push]
 
 jobs:
-  build:
+  Run-Tests:
+    matrix:
+      os: [macos-latest, windows-latest, ubuntu-latest] 
 
-    runs-on: [macos-latest, windows-latest, ubuntu-latest]  
+    runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v4
     - name: Set up Python
