@@ -40,9 +40,12 @@ name: Python Action
 on: [push]
 
 jobs:
-  build:
+  Run-Tests:
+    strategy:
+      matrix:
+        os: [macos-latest, ubuntu-latest] 
 
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v4
     - name: Set up Python
@@ -55,7 +58,7 @@ jobs:
         pip install -r requirements.txt
     - name: Test with pytest
       run: |
-        pytest -v example.py 
+        pytest -v example.py
 ```
 5. Add your changes to git, make a commit and then push it to your forked repo on github
 
